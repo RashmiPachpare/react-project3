@@ -3,10 +3,10 @@
     box-sizing: border-box;
 }
 .nav{
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav2{
     display: none;
@@ -16,12 +16,12 @@
 }
 .links{
     text-decoration: none;
-    color: black;
-    font-size: 17px;
+    color: brown;
+    font-size: 20px;
     margin-top: 10px;
 }
 .page-heading{
-    font-size: 25px;
+    font-size: 35px;
     margin-top: 30px;
     margin-left: 73px;
     text-align: left;
@@ -38,24 +38,24 @@
     color: gray;
 }
 .home-image-container{
-    margin-left: 170px;
+    margin-left: 150px;
     display: flex;
     margin-bottom: 30px;
 }
 #bollywood-image img{
-    width: 700px;
+    width: 600px;
     height: 400px;
     border-radius: 20px;
     margin-right: 10px;
 }
 #tech-image img{
-    width: 300px;
+    width: 500px;
     height: 185px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 #hollywood-image img{
-    width: 300px;
+    width: 500px;
     height: 190px;
     border-radius: 20px;
 }
@@ -71,6 +71,7 @@
     margin-left: 10px;
     background-color: #F08080;
 }
+
 .home-latest{
     width: 90%;
     margin: auto;
@@ -228,11 +229,7 @@ hr{
     margin-left: 100px;
 }
 #header-the{
-    /* font-size: 30px;
-    margin-right: 5px;
-    background-color: black;
-    color: white;
-    padding: 5px; */
+
  top: 85px;
 left: 814px;
 width: 39px;
@@ -260,6 +257,10 @@ opacity: 1;
     height: 300px;
     width: 500px;
     margin-top: 30px;
+}
+#back{
+    width: 100px;
+    height:50px;
 }
 .detail-para{
     width: 500px;
@@ -381,9 +382,9 @@ opacity: 1;
 }
 .mobile-menu-icon{
     display: block;
-    font-size: 150px;
+    font-size: 50px;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 1300px;
     border: none;
     background-color: white;
@@ -416,8 +417,8 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 70px;
-    margin-left: 40px;
+    font-size: 50px;
+    margin-left: 45px;
 }
 .latest1,.latest2,.latest3,.latest4,.latest5,.latest6{
     padding: 70px;
@@ -587,7 +588,7 @@ opacity: 1;
     text-align: left;
 }
 .avatar{
-    border-radius: 50%;
+    border-radius: 30%;
     margin-left: 0px;
 }
 .person{

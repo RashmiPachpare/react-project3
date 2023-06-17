@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { store } from './ContextAPI'
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import {AiTwotoneLike} from 'react-icons/ai'
 import {GrShareOption} from 'react-icons/gr'
 import {AiFillFacebook} from 'react-icons/ai'
@@ -17,8 +17,13 @@ const DetailDescription = () => {
   var {id}=useParams();
   id=Number(id);
   const[isMobile,setIsMobile]=useState(false);
+  const navigate = useNavigate()
+  const goBack = () => {
+    navigate(-1)
+  }
   return (
     <>
+    
     <div className='detail-header'>
       <h1><span id="header-the">THE</span><span id="header-siren">SIREN</span></h1>
     </div>
@@ -30,6 +35,7 @@ const DetailDescription = () => {
         <NavLink to="/Fitness" activeclassname="active" className="links">Fitness</NavLink>
         <NavLink to="/Food" activeclassname="active" className="links">Food</NavLink>
     </div>
+    <button id="back" onClick={goBack}>Back</button>
         <button className='mobile-menu-icon' onClick={()=>{setIsMobile(!isMobile)}}>
         {isMobile ? <RxCross2/> : <GiHamburgerMenu/> }
         </button>
